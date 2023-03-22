@@ -10,9 +10,7 @@ import java.util.logging.Logger;
 
 public class GWD {
     private static WebDriver driver;
-
     public static WebDriver getDriver() {
-
         Logger logger = Logger.getLogger("");
         logger.setLevel(Level.SEVERE);
 
@@ -24,7 +22,6 @@ public class GWD {
             driver = new ChromeDriver(options);
             // driver = new ChromeDriver();
         }
-
         return driver;
     }
 
