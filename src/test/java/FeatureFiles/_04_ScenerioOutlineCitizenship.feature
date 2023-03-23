@@ -14,6 +14,10 @@ Feature: CitizenShip Functionality
     When User create a Citizenship name as "<name>" and short name as "<short>"
     Then Already exist message should be displayed
 
+    When User delete the "<name>" // TODO
+    Then Success message should be displayed
+
+
     Examples:
       | name | short |
       | NewCitizenship01 | New0101 |
