@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 // POM : Page Object Model
 public class DialogContent extends Parent {
     public DialogContent() {
@@ -20,19 +19,14 @@ public class DialogContent extends Parent {
     public WebElement loginButton;
     @FindBy(css = "span[class='mat-tooltip-trigger logo-text']")
     public WebElement textTechnoStudy;
-
     @FindBy(xpath= "//ms-add-button[contains(@tooltip,'ADD')]//button")
     public WebElement addButton;
-
     @FindBy(xpath= "//ms-text-field[@formcontrolname='name']/input")
     public WebElement nameInput;
-
     @FindBy(xpath= "//ms-text-field[@formcontrolname='code']/input")
     public WebElement codeInput;
-
-    @FindBy(xpath="//ms-save-button[@class='ng-star-inserted']//button")
+    @FindBy(xpath="//ms-save-button/button")
     public WebElement saveButton;
-
-    @FindBy(xpath="//div[@class='hot-toast-bar-base']")
+    @FindBy(xpath="//div[contains(text(),'successfully')]")
     public WebElement successMessage;
 }
