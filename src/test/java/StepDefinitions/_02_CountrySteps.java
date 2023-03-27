@@ -34,6 +34,5 @@ public class _02_CountrySteps {
         dc.sendKeysFunction(dc.nameInput,name);
         dc.sendKeysFunction(dc.codeInput,code);
         dc.clickFunction(dc.saveButton);
-
     }
 }

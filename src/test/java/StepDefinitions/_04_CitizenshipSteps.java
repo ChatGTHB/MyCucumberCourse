@@ -27,4 +27,9 @@ public class _04_CitizenshipSteps {
     public void alreadyExistMessageShouldBeDisplayed() {
         dc.verifyContainsTextFunction(dc.alreadyExist,"already");
     }
+
+    @When("User delete the {string}")
+    public void userDeleteThe(String searchedText) {
+        dc.deleteItem(searchedText);
+    }
 }
