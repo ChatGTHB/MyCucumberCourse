@@ -19,7 +19,7 @@ Feature: CitizenShip Functionality
 
 
     Examples:
-      | name                | short   |
+      | name        | short   |
       | NewCity1101 | New0101 |
       | NewCity2202 | New0202 |
       | NewCity3303 | New0303 |

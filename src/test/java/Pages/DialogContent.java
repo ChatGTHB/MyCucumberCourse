@@ -44,15 +44,15 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement deleteDialogButton;
 
+    @FindBy(xpath = "//input[@id='ms-text-field-5']")
+    private WebElement integrationCode;
 
-    public void deleteItem(String searchedText) {
-        sendKeysFunction(searchInput, searchedText);
-        clickFunction(searchButton);
-        // wait.until(ExpectedConditions.elementToBeClickable(searchButton));
-        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"), 0));
-        clickFunction(deleteImageButton);
-        clickFunction(deleteDialogButton);
-    }
+    @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']/input")
+    private WebElement priorityCode;
+
+    @FindBy(xpath = "//mat-slide-toggle[@formcontrolname='active']")
+    private WebElement toggleBar;
+
 
     public WebElement getWebElement(String strButton) {
         switch (strButton) {
@@ -64,9 +64,26 @@ public class DialogContent extends Parent {
                 return nameInput;
             case "codeInput":
                 return codeInput;
+            case "integrationCode":
+                return integrationCode;
+            case "priorityCode":
+                return priorityCode;
+            case "toggleBar":
+                return toggleBar;
 
         }
         return null;
     }
+
+
+    public void deleteItem(String searchedText) {
+        sendKeysFunction(searchInput, searchedText);
+        clickFunction(searchButton);
+        // wait.until(ExpectedConditions.elementToBeClickable(searchButton));
+        wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//fuse-progress-bar/*"), 0));
+        clickFunction(deleteImageButton);
+        clickFunction(deleteDialogButton);
+    }
+
 
 }
