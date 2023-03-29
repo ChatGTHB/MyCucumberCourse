@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -13,6 +14,9 @@ public class GWD {
     public static WebDriver getDriver() {
         Logger logger = Logger.getLogger("");
         logger.setLevel(Level.SEVERE);
+
+        Locale.setDefault(new Locale("EN"));
+        System.setProperty("user.language", "EN");
 
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 

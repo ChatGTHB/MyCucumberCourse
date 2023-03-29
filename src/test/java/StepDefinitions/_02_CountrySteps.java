@@ -3,6 +3,7 @@ package StepDefinitions;
 import Pages.DialogContent;
 import Pages.LeftNav;
 import io.cucumber.java.en.*;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class _02_CountrySteps {
 
@@ -17,9 +18,12 @@ public class _02_CountrySteps {
 
     @When("Create a country")
     public void createACountry() {
+        String countryName= RandomStringUtils.randomAlphanumeric(8);
+        String countryCode= RandomStringUtils.randomNumeric(4);
+
         dc.clickFunction(dc.addButton);
-        dc.sendKeysFunction(dc.nameInput,"New_Country");
-        dc.sendKeysFunction(dc.codeInput,"0101");
+        dc.sendKeysFunction(dc.nameInput,countryName);
+        dc.sendKeysFunction(dc.codeInput,countryCode);
         dc.clickFunction(dc.saveButton);
     }
 

@@ -11,5 +11,5 @@ Feature: Country Multi Scenerio
     Then Success message should be displayed
 
   Scenario: Create country 2
-    When Create a country name as "ParadiseCountry" code as "010101"
+    When Create a country name as "ParadiseCountry0123" code as "0101012"
     Then Success message should be displayed
