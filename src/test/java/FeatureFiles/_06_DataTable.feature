@@ -18,7 +18,7 @@ Feature: DataTable Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput | KeremUlk1 |
+      | nameInput | KeremUlk01 |
       | codeInput | i3434     |
 
     And Click on the element in Dialog
@@ -27,7 +27,7 @@ Feature: DataTable Functionality
     Then Success message should be displayed
 
     And User delete item from Dialog Content
-      | KeremUlk1 |
+      | KeremUlk01 |
 
     Then Success message should be displayed
 
@@ -44,7 +44,7 @@ Feature: DataTable Functionality
       | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput | KeremUlk1 |
+      | nameInput | KeremUlk01 |
 
     And Click on the element in Dialog
       | saveButton |
@@ -52,7 +52,7 @@ Feature: DataTable Functionality
     Then Success message should be displayed
 
     And User delete item from Dialog Content
-      | KeremUlk1 |
+      | KeremUlk01 |
 
     Then Success message should be displayed
 
