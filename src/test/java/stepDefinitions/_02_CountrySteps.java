@@ -1,7 +1,7 @@
-package StepDefinitions;
+package stepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
+import pages.DialogContent;
+import pages.LeftNav;
 import io.cucumber.java.en.*;
 import org.apache.commons.lang3.RandomStringUtils;
 

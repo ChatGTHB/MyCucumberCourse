@@ -1,7 +1,7 @@
-package StepDefinitions;
+package stepDefinitions;
 
-import Pages.DialogContent;
-import Utilities.GWD;
+import pages.DialogContent;
+import utilities.GWD;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

@@ -1,12 +1,8 @@
-package StepDefinitions;
+package stepDefinitions;
 
-import Utilities.GWD;
-import io.cucumber.java.After;
-import io.cucumber.java.Scenario;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-
-
+import utilities.GWD;
+import io.cucumber.java.*;
+import org.openqa.selenium.*;
 
 public class Hooks {
     @After

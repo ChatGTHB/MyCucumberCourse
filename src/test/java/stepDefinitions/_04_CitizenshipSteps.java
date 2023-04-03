@@ -1,7 +1,7 @@
-package StepDefinitions;
+package stepDefinitions;
 
-import Pages.DialogContent;
-import Pages.LeftNav;
+import pages.DialogContent;
+import pages.LeftNav;
 import io.cucumber.java.en.*;
 
 public class _04_CitizenshipSteps {
