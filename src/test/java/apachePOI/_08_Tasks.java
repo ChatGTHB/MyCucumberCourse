@@ -1,4 +1,4 @@
-package apachePOI.resource;
+package apachePOI;
 
 public class _08_Tasks {
     public static void main(String[] args) {
