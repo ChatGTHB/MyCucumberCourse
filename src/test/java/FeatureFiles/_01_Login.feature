@@ -1,7 +1,7 @@
 Feature: Login Functionality
 
   @SmokeTest
-  Scenario: Login with valid username and password
+  Scenario: Login Functionality
 
     Given Navigate to Campus
     When Enter username and password and click button

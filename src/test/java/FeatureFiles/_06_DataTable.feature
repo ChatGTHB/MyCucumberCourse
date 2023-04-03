@@ -5,8 +5,6 @@ Feature: DataTable Functionality
     When Enter username and password and click button
     Then User should login successfully
 
-
-
   Scenario: Create Country
 
     And Click on the element in LeftNav
@@ -19,7 +17,7 @@ Feature: DataTable Functionality
 
     And User sending the keys in Dialog Content
       | nameInput | KeremUlk01 |
-      | codeInput | i3434     |
+      | codeInput | i3434      |
 
     And Click on the element in Dialog
       | saveButton |
@@ -32,7 +30,7 @@ Feature: DataTable Functionality
     Then Success message should be displayed
 
 
-@Regression
+  @Regression
   Scenario: Create Nationality
 
     And Click on the element in LeftNav
@@ -61,9 +59,9 @@ Feature: DataTable Functionality
   Scenario: Fee Functionality
 
     And Click on the element in LeftNav
-      | setup         |
-      | parameters    |
-      | fees          |
+      | setup      |
+      | parameters |
+      | fees       |
 
     And Click on the element in Dialog
       | addButton |

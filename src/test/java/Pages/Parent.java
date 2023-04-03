@@ -46,3 +46,4 @@ public class Parent {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 }
+
