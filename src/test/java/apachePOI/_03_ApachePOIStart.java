@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class _03_ApachePOIStart {
     public static void main(String[] args) throws IOException {
-        String path = "src/test/java/apachePOI/resource/ApacheExcel2.xlsx";
+        String path = "src/test/java/apachePOI/resources/ApacheExcel2.xlsx";
 
         FileInputStream fileReadingConnection = new FileInputStream(path);
 

@@ -15,7 +15,7 @@ public class _07_NewExcelWrite {
         Cell newCell= newRow.createCell(0);
         newCell.setCellValue("Hello World!");
 
-        String path = "src/test/java/apachePOI/resource/NewExcel.xlsx";
+        String path = "src/test/java/apachePOI/resources/NewExcel.xlsx";
 
         FileOutputStream outputStream=new FileOutputStream(path);
         workbook.write(outputStream);

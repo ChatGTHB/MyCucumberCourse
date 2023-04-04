@@ -27,7 +27,7 @@ public class _05_GetASpesificData {
 
     private static String findFromExcel(String searchedWord) {
         String willReturn = "";
-        String path = "src/test/java/apachePOI/resource/LoginData.xlsx";
+        String path = "src/test/java/apachePOI/resources/LoginData.xlsx";
         Sheet sheet = null;
 
         try {

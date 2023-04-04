@@ -9,7 +9,7 @@ import java.io.IOException;
 public class _06_WriteInTheExcel {
     public static void main(String[] args) throws IOException {
 
-        String path = "src/test/java/apachePOI/resource/WriteInTheExcelFile.xlsx";
+        String path = "src/test/java/apachePOI/resources/WriteInTheExcelFile.xlsx";
 
         FileInputStream inputStream = new FileInputStream(path);
         Workbook workbook = WorkbookFactory.create(inputStream);
