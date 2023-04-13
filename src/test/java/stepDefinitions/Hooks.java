@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import utilities.ExcelUtility;
 import utilities.GWD;
 import io.cucumber.java.*;
 import org.openqa.selenium.*;
@@ -8,6 +9,9 @@ public class Hooks {
     @After
     public void after(Scenario scenerio){
         System.out.println("The scenerio has finished");
+
+        ExcelUtility.writeExcel("src/test/java/apachePOI/resources/ScenarioStatus.xlsx",
+                scenerio, GWD.threadBrowserGet());
 
         if (scenerio.isFailed()){
             TakesScreenshot ts=(TakesScreenshot) GWD.getDriver();

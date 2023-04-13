@@ -16,23 +16,34 @@ public class _09_Tasks {
          * src/test/java/ApachePOI/resources/ApacheExcel2.xlsx
          */
 
+        String path = "src/test/java/apachePOI/resources/ApacheExcel2.xlsx";
+        String sheetName="testCitizen";
+
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of columns you want : ");
         int column= input.nextInt();
 
-       List< List<String>> rotatingResults = getData(column);
-        System.out.println("rotatingResults = " + rotatingResults);
+       List< List<String>> rotatingResults = getData(path,sheetName,column);
+
+        for (int i = 0; i < rotatingResults.size(); i++) {
+            for (int j = 0; j < rotatingResults.get(i).size(); j++) {
+                System.out.print(rotatingResults.get(i).get(j)+"\t");
+            }
+            System.out.println();
+        }
+       // System.out.println("rotatingResults = " + rotatingResults);
     }
 
-    public static List<List<String>> getData(int column) {
+    public static List<List<String>> getData(String path,String sheetName,int column) {
+
         List< List<String>> table=new ArrayList<>();
-        String path = "src/test/java/apachePOI/resources/ApacheExcel2.xlsx";
+
         Sheet sheet = null;
 
         try {
             FileInputStream inputStream = new FileInputStream(path);
             Workbook workbook = WorkbookFactory.create(inputStream);
-            sheet = workbook.getSheetAt(1);
+            sheet = workbook.getSheet(sheetName);
         } catch (Exception e) {
             System.out.println("e.getMessage() = " + e.getMessage());
         }
