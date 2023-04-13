@@ -7,6 +7,7 @@ import java.sql.*;
 public class _01_Intro {
     @Test
     public void test01() throws SQLException {
+
         String hostURL = "jdbc:mysql://db-technostudy.ckr1jisflxpv.us-east-1.rds.amazonaws.com:3306/sakila";
         String username = "root";
         String password = "'\"-LhCB'.%k[4S]z";
@@ -33,6 +34,4 @@ public class _01_Intro {
 
         connection.close();
     }
-
-
 }
