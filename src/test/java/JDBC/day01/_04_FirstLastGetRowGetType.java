@@ -19,8 +19,8 @@ public class _04_FirstLastGetRowGetType extends JDBCParent {
         System.out.println("First line city name : "+rs.getString(1));
 
         rs.last();
-        int whatLineAmIOn = rs.getRow();
+        int whatRowAmIOn = rs.getRow();
 
-        System.out.println("whatLineAmIOn : " + whatLineAmIOn);
+        System.out.println("whatLineAmIOn : " + whatRowAmIOn);
     }
 }

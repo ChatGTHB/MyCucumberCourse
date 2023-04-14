@@ -21,8 +21,8 @@ public class JDBCParent {
         String password = "'\"-LhCB'.%k[4S]z";
 
         try {
-            connection = DriverManager.getConnection(hostUrl, username, password); // bağlantıya click  1.madde
-            statement = connection.createStatement(); // sorguları çalıştırmak için sorgu gönderme ortamı
+            connection = DriverManager.getConnection(hostUrl, username, password);
+            statement = connection.createStatement();
         }catch (Exception e)
         {
             System.out.println(e.getMessage());
