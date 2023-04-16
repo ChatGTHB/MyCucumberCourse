@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e558c98b-76fa-4245-8e8e-8fdbcb1bf0e4" name="Changes" comment="updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JDBC/JDBCParent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JDBC/JDBCParent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReports/testReport 16-Apr-23 04.33.17/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReports/testReport 16-Apr-23 04.33.17/test-output/screenshots/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReports/testReport 16-Apr-23 04.33.17/test-output/sparkReport/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReports/testReport 16-Apr-23 04.35.55/PdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReports/testReport 16-Apr-23 04.35.55/test-output/screenshots/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReports/testReport 16-Apr-23 04.35.55/test-output/sparkReport/Spark.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,18 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cihat/IdeaProjects/CampusTestTeam1&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/cihat/IdeaProjects/MyCucumberCourse/pom.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "two.files.diff.last.used.file": "C:/Users/cihat/IdeaProjects/MyCucumberCourse/pom.xml"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cihat\IdeaProjects\MyCucumberCourse\src\test\java\FeatureFiles" />
@@ -75,107 +80,6 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Utilities" />
     </key>
-  </component>
-  <component name="RunManager" selected="TestNG._04_FirstLastGetRowGetType.test1">
-    <configuration name="_01_Intro.test01" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCucumberCourse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBC.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBC.day01" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.day01._01_Intro" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_02_NextPrevAbsRel.absoluteRelative" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCucumberCourse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBC.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBC.day01" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.day01._02_NextPrevAbsRel" />
-      <option name="METHOD_NAME" value="absoluteRelative" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_02_NextPrevAbsRel.nextPrev" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCucumberCourse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBC.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBC.day01" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.day01._02_NextPrevAbsRel" />
-      <option name="METHOD_NAME" value="nextPrev" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_03_Question.test01" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCucumberCourse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBC.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBC.day01" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.day01._03_Question" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_04_FirstLastGetRowGetType.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCucumberCourse" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBC.day01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="JDBC.day01" />
-      <option name="MAIN_CLASS_NAME" value="JDBC.day01._04_FirstLastGetRowGetType" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG._04_FirstLastGetRowGetType.test1" />
-        <item itemvalue="TestNG._03_Question.test01" />
-        <item itemvalue="TestNG._02_NextPrevAbsRel.absoluteRelative" />
-        <item itemvalue="TestNG._02_NextPrevAbsRel.nextPrev" />
-        <item itemvalue="TestNG._01_Intro.test01" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -424,12 +328,67 @@
       <option name="project" value="LOCAL" />
       <updated>1681412668396</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="updated">
+      <created>1681609045113</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1681609045113</updated>
+    </task>
+    <task id="LOCAL-00036" summary="updated">
+      <created>1681609060794</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681609060794</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="7562991a-a03a-4590-aa97-487981ed754b" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="7562991a-a03a-4590-aa97-487981ed754b">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/cihat/IdeaProjects/MyCucumberCourse/test-output" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
