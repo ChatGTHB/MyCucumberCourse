@@ -1,4 +1,4 @@
-Feature: DataTable Ornek
+Feature: DataTable Example
 
   Scenario: User List
     When Write username "Kerem"
