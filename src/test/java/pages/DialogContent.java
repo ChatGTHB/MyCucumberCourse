@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import java.util.List;
+
 // POM : Page Object Model
 public class DialogContent extends Parent {
     public DialogContent() {
@@ -57,6 +59,8 @@ public class DialogContent extends Parent {
     private WebElement gradeLevel;
     @FindBy(xpath="(//mat-option//span)[2]")
     private WebElement gradeLevel2;
+    @FindBy(xpath="//tr[contains(@class, 'mat-row')]/td[2]")
+    public List<WebElement> nameList;
 
     public WebElement getWebElement(String strButton){
 
