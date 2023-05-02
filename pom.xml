@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!--    bana bi selenium-->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -35,7 +34,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.7.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -72,7 +71,7 @@
         </dependency>
 
 
-        <!-- Excel işlemleri için aşağıdaki 2 depency ye kullanılıyor, -->
+        <!-- The following 2 dependencies are used for Excel operations-->
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
@@ -87,7 +86,7 @@
             <version>4.1.0</version>
         </dependency>
 
-        <!-- JDBC - MySql için eklendi -->
+        <!-- Added for MySql-JDBC -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -96,6 +95,29 @@
 
 
     </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+
+                    <!--                    <suiteXmlFiles>-->
+                    <!--                        <suiteXmlFile>testng.xml</suiteXmlFile>-->
+                    <!--                    </suiteXmlFiles>-->
+
+                    <includes>
+                        <!-- for  run class or classes  **/:can find its location by all folders  -->
+                        <include>**/_04_TestRunnerSmoke.java</include>
+                    </includes>
+
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
