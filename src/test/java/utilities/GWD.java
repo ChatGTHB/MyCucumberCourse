@@ -42,6 +42,7 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
+                    // Chrome memory maximize for Jenkins
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
                     threadDriver.set(new ChromeDriver(options));

@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         tags="@SmokeTest",
         features = {"src/test/java/featureFiles"},
         glue = {"stepDefinitions"},
-        plugin= {"html:target/site/cucumber-pretty.html"}, // plugin normally absent; added for jenkins
+        plugin= {"json:target/cucumber/cucumber.json"}, // plugin normally absent; added for jenkins
         dryRun = false
 )
 public class _04_TestRunnerSmoke extends AbstractTestNGCucumberTests{
