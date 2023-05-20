@@ -13,8 +13,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class GWD {
-    private static ThreadLocal<WebDriver> threadDriver=new ThreadLocal<>();
-    private static ThreadLocal<String> threadBrowserName=new ThreadLocal<>();
+    private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
+    private static ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
 
@@ -30,7 +30,7 @@ public class GWD {
 
         if (threadDriver.get() == null) {
 
-            switch(threadBrowserName.get()){
+            switch (threadBrowserName.get()) {
 
                 case "edge":
                     threadDriver.set(new EdgeDriver());
@@ -42,11 +42,22 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
-                    // Chrome memory maximize for Jenkins
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
-                    threadDriver.set(new ChromeDriver(options));
-                    break;
+                    // While running our other tests directly, chrome is assigned by default because no parameter will come from XML.
+                    // System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
+                    // WebDriverManager.chromedriver().setup();
+
+                    if (!runningFromIntelliJ()) {
+                        // For Jenkins, it was set to maximize the display of the web page in memory.
+                        ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+                        threadDriver.set(new ChromeDriver(options)); // A webdriver is assigned to this thread.
+                    } else {
+                        ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--remote-allow-origins=*");
+                        //driver = new ChromeDriver(options);
+
+                        threadDriver.set(new ChromeDriver(options)); // A webdriver is assigned to this thread.
+                    }
             }
         }
         threadDriver.get().manage().window().maximize();
@@ -63,16 +74,22 @@ public class GWD {
         if (threadDriver.get() != null) {
             threadDriver.get().quit();
             WebDriver driver = threadDriver.get();
-            driver=null;
+            driver = null;
             threadDriver.set(driver);
         }
     }
 
-    public static void threadBrowserSet(String browser){
+    public static void threadBrowserSet(String browser) {
         threadBrowserName.set(browser);
     }
 
     public static String threadBrowserGet() {
         return threadBrowserName.get();
+    }
+
+    public static boolean runningFromIntelliJ()
+    {
+        String classPath = System.getProperty("java.class.path");
+        return classPath.contains("idea_rt.jar");
     }
 }
