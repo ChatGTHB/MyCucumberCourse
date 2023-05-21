@@ -42,22 +42,26 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
+
                     // While running our other tests directly, chrome is assigned by default because no parameter will come from XML.
                     // System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
                     // WebDriverManager.chromedriver().setup();
 
                     if (!runningFromIntelliJ()) {
+
                         // For Jenkins, it was set to maximize the display of the web page in memory.
                         ChromeOptions options = new ChromeOptions();
                         options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
                         threadDriver.set(new ChromeDriver(options)); // A webdriver is assigned to this thread.
+
                     } else {
+
                         ChromeOptions options = new ChromeOptions();
                         options.addArguments("--remote-allow-origins=*");
                         //driver = new ChromeDriver(options);
-
                         threadDriver.set(new ChromeDriver(options)); // A webdriver is assigned to this thread.
                     }
+                    break;
             }
         }
         threadDriver.get().manage().window().maximize();
@@ -87,8 +91,7 @@ public class GWD {
         return threadBrowserName.get();
     }
 
-    public static boolean runningFromIntelliJ()
-    {
+    public static boolean runningFromIntelliJ() {
         String classPath = System.getProperty("java.class.path");
         return classPath.contains("idea_rt.jar");
     }
