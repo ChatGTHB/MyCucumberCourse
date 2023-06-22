@@ -42,14 +42,11 @@ public class GWD {
                     threadDriver.set(new SafariDriver());
                     break;
                 default:
-
                     ChromeOptions options = new ChromeOptions();
-
                     // Add below lines to run Chrome browser in background while running on Jenkins
                     if (isRunningOnJenkins()) {
                         options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
                     }
-
                     threadDriver.set(new ChromeDriver(options));
                     break;
             }
